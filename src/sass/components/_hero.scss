@@ -1,0 +1,41 @@
+.hero {
+  padding: 24px 0;
+  text-align: center;
+}
+
+.hero__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.hero__desc {
+  margin-bottom: 24px;
+}
+
+.hero__desc--accent {
+  color: #0f428f;
+}
+
+.hero__accent {
+  color: #0f428f;
+}
+
+.hero__calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list__item {
+  border-radius: 25px;
+  background: #0f428f;
+}
+
+.calc {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

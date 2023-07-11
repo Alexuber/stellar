@@ -1,0 +1,30 @@
+.partners-container {
+  background-color: #0f428f;
+  padding: 0 16px;
+  border-bottom-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+
+.partners-animations {
+  height: 290px;
+  margin-bottom: 32px;
+}
+
+.companies {
+  padding-bottom: 32px;
+}
+
+.companies-desc {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.companies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}

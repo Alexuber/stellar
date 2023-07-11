@@ -1,0 +1,385 @@
+<section class="trucks">
+  <div class="container trucks-container">
+    <div class="trucks__about">
+      <div class="trucks-info">
+        <div class="trucks-info__wrapper">
+          <svg class="trucks-info__icon" width="24" height="24">
+            <use href="./images/icons/sprite.svg#icon-shipping_truck"></use>
+          </svg>
+          <h2 class="trucks-info__title">Власний автопарк</h2>
+        </div>
+      </div>
+      <p class="trucks-info__desc">
+        <span class="text-accent">175</span> Автомобілів
+      </p>
+      <div class="trucks-info__brand">
+        <svg class="brand-icon" width="32" height="32">
+          <use href="./images/icons/sprite.svg#icon-volvo"></use>
+        </svg>
+        <p class="brand-text">VOLVO</p>
+      </div>
+      <div class="about-trucks">
+        <p class="about-trucks-desc">
+          Наш автопарк постійно оновлюється сучасними зразками техніки найкращих
+          європейських виробників. Це, зокрема,
+          <span class="text-accent"
+            >нові VOLVO EURO-6 та сучасні напівпричепи.</span
+          >
+        </p>
+      </div>
+      <div class="truck-animation">
+        <picture class="trucks__crane">
+          <source
+            media="(min-width: 1360px)"
+            srcset="
+              ./images/trucks/full_ds/crane_ds@1x.png 1x,
+              ./images/trucks/full_ds/crane_ds@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/trucks/tab/crane_tab@1x.png 1x,
+              ./images/trucks/tab/crane_tab@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/trucks/mob/crane_mob@1x.png 1x,
+              ./images/trucks/mob/crane_mob@2x.png 2x
+            "
+          />
+          <img
+            src="./images/trucks/mob/crane_mob@1x.png"
+            alt="trucks load crane"
+          />
+        </picture>
+        <picture class="trucks__main">
+          <source
+            media="(min-width: 1360px)"
+            srcset="
+              ./images/trucks/full_ds/main_truck_ds@1x.png 1x,
+              ./images/trucks/full_ds/main_truck_ds@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/trucks/tab/main_truck_tab@1x.png 1x,
+              ./images/trucks/tab/main_truck_tab@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/trucks/mob/main_truck_mob@1x.png 1x,
+              ./images/trucks/mob/main_truck_mob@2x.png 2x
+            "
+          />
+          <img
+            src="./images/trucks/mob/main_truck_mob@1x.png"
+            alt="trucks load crane"
+          />
+        </picture>
+      </div>
+      <div class="loading">
+        <p class="loading-percentage">100</p>
+        <span class="loading-symbol">%</span>
+        <!-- todo процент установить по нижней линии! -->
+        <p class="loading-title">Завантажено в цистерну</p>
+        <div class="loadin-icon-wrapper">
+          <svg class="loading-icon" width="16" height="16">
+            <use href="./images/icons/sprite.svg#icon-water_drop"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="trucks__categoties">
+      <div class="trucks-info">
+        <div class="trucks-info__wrapper">
+          <svg class="trucks-info__icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-weight"></use>
+          </svg>
+          <h2 class="trucks-info__title">Категорії вантажів</h2>
+        </div>
+      </div>
+      <p class="trucks-info__desc">
+        Машини вантажопідйомні<br />стю
+        <span class="text-accent">до 25,5 тонн</span>
+      </p>
+      <div class="about-trucks about-categories">
+        <p class="about-trucks-desc text-accent">
+          Автопарк строго сегментований по товарних групах
+        </p>
+      </div>
+      <!-- <div class="trucks-slider slider-container">
+        <div class="slider">
+          <div class="card">
+            <p class="weight">
+              до 25.5 <span class="weight--accent">(тонн)</span>
+            </p>
+            <img
+              src="./images/trucks/trucks/tab_mob/truck1_tab@1x.png"
+              alt="truck image"
+              width="271"
+            />
+          </div>
+          <div class="card">Карточка 2</div>
+          <div class="card">Карточка 3</div>
+          <div class="card">Карточка 4</div>
+          <div class="card">Карточка 5</div>
+        </div>
+        <button id="prevButton">Prev</button>
+        <button id="nextButton">Next</button>
+      </div> -->
+    </div>
+    <div class="slider-container">
+      <div class="slider-card">
+        <p class="weight">до 25.5 <span class="weight--accent">(тонн)</span></p>
+        <img
+          src="./images/trucks/trucks/tab_mob/truck1_tab@1x.png"
+          alt="truck image"
+          width="271"
+          class="slider-img"
+        />
+        <div class="characteristics">
+          <svg class="characteristics-icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-truck"></use>
+          </svg>
+          <ul class="characteristics__list">
+            <li class="characteristics__item item">
+              <span class="item__title">Тип кузова</span>
+              <span class="item__value">Цистерна</span>
+            </li>
+            <li class="characteristics__item item">
+              <span class="item__title">Виробник</span>
+              <img
+                src="./images/trucks/brands/ffb.png"
+                alt="ffb brand logo"
+                width="41"
+                height="32"
+              />
+            </li>
+          </ul>
+          <div class="capacity">
+            <span class="item__title">Об `єм</span>
+            <span class="item__value">32 м<sup>3</sup></span>
+          </div>
+          <svg class="capacity-icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-deployed"></use>
+          </svg>
+        </div>
+        <div class="equipment">
+          <p class="equipment__title">Обладнання</p>
+          <ul class="equipment__list">
+            <li class="equipment__list-item">Підігрів продукту</li>
+            <li class="equipment__list-item">Охолодження продукт</li>
+          </ul>
+        </div>
+        <button class="order-btn">
+          <span class="order-btn__text">Замовити</span
+          ><svg class="trucks-order__icon" width="24" height="24">
+            <use href="./images/icons/sprite.svg#icon-arrow_forward"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="slider-card">
+        <p class="weight">до 25.5 <span class="weight--accent">(тонн)</span></p>
+        <img
+          src="./images/trucks/trucks/tab_mob/truck1_tab@1x.png"
+          alt="truck image"
+          width="271"
+          class="slider-img"
+        />
+        <div class="characteristics">
+          <svg class="characteristics-icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-truck"></use>
+          </svg>
+          <ul class="characteristics__list">
+            <li class="characteristics__item item">
+              <span class="item__title">Тип кузова</span>
+              <span class="item__value">Цистерна</span>
+            </li>
+            <li class="characteristics__item item">
+              <span class="item__title">Виробник</span>
+              <img
+                src="./images/trucks/brands/ffb.png"
+                alt="ffb brand logo"
+                width="41"
+                height="32"
+              />
+            </li>
+          </ul>
+          <div class="capacity">
+            <span class="item__title">Об `єм</span>
+            <span class="item__value">32 м<sup>3</sup></span>
+          </div>
+          <svg class="capacity-icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-deployed"></use>
+          </svg>
+        </div>
+        <div class="equipment">
+          <p class="equipment__title">Обладнання</p>
+          <ul class="equipment__list">
+            <li class="equipment__list-item">Підігрів продукту</li>
+            <li class="equipment__list-item">Охолодження продукт</li>
+          </ul>
+        </div>
+        <button class="order-btn">
+          <span class="order-btn__text">Замовити</span
+          ><svg class="trucks-order__icon" width="24" height="24">
+            <use href="./images/icons/sprite.svg#icon-arrow_forward"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="slider-card">
+        <p class="weight">до 25.5 <span class="weight--accent">(тонн)</span></p>
+        <img
+          src="./images/trucks/trucks/tab_mob/truck1_tab@1x.png"
+          alt="truck image"
+          width="271"
+          class="slider-img"
+        />
+        <div class="characteristics">
+          <svg class="characteristics-icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-truck"></use>
+          </svg>
+          <ul class="characteristics__list">
+            <li class="characteristics__item item">
+              <span class="item__title">Тип кузова</span>
+              <span class="item__value">Цистерна</span>
+            </li>
+            <li class="characteristics__item item">
+              <span class="item__title">Виробник</span>
+              <img
+                src="./images/trucks/brands/ffb.png"
+                alt="ffb brand logo"
+                width="41"
+                height="32"
+              />
+            </li>
+          </ul>
+          <div class="capacity">
+            <span class="item__title">Об `єм</span>
+            <span class="item__value">32 м<sup>3</sup></span>
+          </div>
+          <svg class="capacity-icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-deployed"></use>
+          </svg>
+        </div>
+        <div class="equipment">
+          <p class="equipment__title">Обладнання</p>
+          <ul class="equipment__list">
+            <li class="equipment__list-item">Підігрів продукту</li>
+            <li class="equipment__list-item">Охолодження продукт</li>
+          </ul>
+        </div>
+        <button class="order-btn">
+          <span class="order-btn__text">Замовити</span
+          ><svg class="trucks-order__icon" width="24" height="24">
+            <use href="./images/icons/sprite.svg#icon-arrow_forward"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="slider-card">
+        <p class="weight">до 25.5 <span class="weight--accent">(тонн)</span></p>
+        <img
+          src="./images/trucks/trucks/tab_mob/truck1_tab@1x.png"
+          alt="truck image"
+          width="271"
+          class="slider-img"
+        />
+        <div class="characteristics">
+          <svg class="characteristics-icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-truck"></use>
+          </svg>
+          <ul class="characteristics__list">
+            <li class="characteristics__item item">
+              <span class="item__title">Тип кузова</span>
+              <span class="item__value">Цистерна</span>
+            </li>
+            <li class="characteristics__item item">
+              <span class="item__title">Виробник</span>
+              <img
+                src="./images/trucks/brands/ffb.png"
+                alt="ffb brand logo"
+                width="41"
+                height="32"
+              />
+            </li>
+          </ul>
+          <div class="capacity">
+            <span class="item__title">Об `єм</span>
+            <span class="item__value">32 м<sup>3</sup></span>
+          </div>
+          <svg class="capacity-icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-deployed"></use>
+          </svg>
+        </div>
+        <div class="equipment">
+          <p class="equipment__title">Обладнання</p>
+          <ul class="equipment__list">
+            <li class="equipment__list-item">Підігрів продукту</li>
+            <li class="equipment__list-item">Охолодження продукт</li>
+          </ul>
+        </div>
+        <button class="order-btn">
+          <span class="order-btn__text">Замовити</span
+          ><svg class="trucks-order__icon" width="24" height="24">
+            <use href="./images/icons/sprite.svg#icon-arrow_forward"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="slider-card">
+        <p class="weight">до 25.5 <span class="weight--accent">(тонн)</span></p>
+        <img
+          src="./images/trucks/trucks/tab_mob/truck1_tab@1x.png"
+          alt="truck image"
+          width="271"
+          class="slider-img"
+        />
+        <div class="characteristics">
+          <svg class="characteristics-icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-truck"></use>
+          </svg>
+          <ul class="characteristics__list">
+            <li class="characteristics__item item">
+              <span class="item__title">Тип кузова</span>
+              <span class="item__value">Цистерна</span>
+            </li>
+            <li class="characteristics__item item">
+              <span class="item__title">Виробник</span>
+              <img
+                src="./images/trucks/brands/ffb.png"
+                alt="ffb brand logo"
+                width="41"
+                height="32"
+              />
+            </li>
+          </ul>
+          <div class="capacity">
+            <span class="item__title">Об `єм</span>
+            <span class="item__value">32 м<sup>3</sup></span>
+          </div>
+          <svg class="capacity-icon" width="32" height="32">
+            <use href="./images/icons/sprite.svg#icon-deployed"></use>
+          </svg>
+        </div>
+        <div class="equipment">
+          <p class="equipment__title">Обладнання</p>
+          <ul class="equipment__list">
+            <li class="equipment__list-item">Підігрів продукту</li>
+            <li class="equipment__list-item">Охолодження продукт</li>
+          </ul>
+        </div>
+        <button class="order-btn">
+          <span class="order-btn__text">Замовити</span
+          ><svg class="trucks-order__icon" width="24" height="24">
+            <use href="./images/icons/sprite.svg#icon-arrow_forward"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

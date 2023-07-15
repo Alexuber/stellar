@@ -1,0 +1,179 @@
+<section class="order-form">
+  <div class="container order-form-container">
+    <div class="form-container">
+      <div class="pagination">
+        <button class="pagination-item active">1</button>
+        <button class="pagination-item">2</button>
+        <button class="pagination-item">3</button>
+      </div>
+
+      <div class="step step-1 active">
+        <form>
+          <label for="fromCity">Де забрати вантаж?</label>
+          <input type="text" placeholder="Місто відправлення" id="fromCity" />
+          <label for="toCity">Куди доставити?</label>
+          <input type="text" placeholder="Місто розвантаження" id="toCity" />
+          <div class="form-button-wrapper">
+            <button class="button continue-button" type="button">
+              Продовжити
+            </button>
+            <button class="button next-button" type="button">
+              <svg class="next-button-icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-arrow_forward"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="form-terms">
+            <p class="form-terms__text">
+              Натискаючи на кнопку, ви дає згоду на обробку персональних даних
+              та погоджуєтесь з політикою конфіденційності.
+            </p>
+          </div>
+          <div class="form-questions">
+            <h3 class="form-questions__title">Звідки ви дізналися про нас?</h3>
+            <div class="checkbox">
+              <label class="checkbox-button" for="recommendations">
+                <input
+                  type="checkbox"
+                  id="recommendations"
+                  name="option1"
+                  value="option1"
+                />
+                Рекомендації
+              </label>
+
+              <label class="checkbox-button" for="advertisement">
+                <input
+                  type="checkbox"
+                  id="advertisement"
+                  name="option2"
+                  value="option2"
+                />
+                Реклама
+              </label>
+
+              <label class="checkbox-button" for="ad-placement">
+                <input
+                  type="checkbox"
+                  id="ad-placement"
+                  name="option3"
+                  value="option3"
+                />
+                Розміщення реклами на цистернах
+              </label>
+
+              <label class="checkbox-button" for="freight-exchange">
+                <input
+                  type="checkbox"
+                  id="freight-exchange"
+                  name="option4"
+                  value="option4"
+                />
+                Біржа перевезень
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="step step-2">
+        <form>
+          <label for="date">Дата відправлення</label>
+          <input type="date" placeholder="04.06.2023" id="date" />
+          <label for="description">Опис вантажу</label>
+          <input type="text" placeholder="Меблі" id="description" />
+          <label for="truck-type">Тип напівпричему</label>
+          <select class="truck_select" id="truck-type" name="truck-type">
+            <option value="Танк контейнер">
+              <div class="option-item">
+                <p class="option-item__type">Танк контейнер</p>
+                <p class="option-item__capacity">96 м3</p>
+              </div>
+            </option>
+            <option value="Цистерна">
+              <div class="option-item">
+                <p class="option-item__type">Цистерна</p>
+                <p class="option-item__capacity">32 м3</p>
+              </div>
+            </option>
+            <option value="Тент">
+              <div class="option-item">
+                <p class="option-item__type">Тент</p>
+                <p class="option-item__capacity">96 м3</p>
+              </div>
+            </option>
+            <option value="Сілосовоз">
+              <div class="option-item">
+                <p class="option-item__type">Сілосовоз</p>
+                <p class="option-item__capacity">60 м3</p>
+              </div>
+            </option>
+            <option value="Платформа контейнеровоз 20">
+              <div class="option-item">
+                <p class="option-item__type">Платформа контейнеровоз</p>
+                <p class="option-item__capacity">20 футів</p>
+              </div>
+            </option>
+            <option value="Платформа контейнеровоз 40">
+              <div class="option-item">
+                <p class="option-item__type">Платформа контейнеровоз</p>
+                <p class="option-item__capacity">40 футів</p>
+              </div>
+            </option></select
+          ><label for="weight">Вага</label>
+          <input type="number" placeholder="1" id="weight" />
+          <div class="form-button-wrapper">
+            <button class="button continue-button" type="button">
+              Продовжити
+            </button>
+            <button class="button next-button" type="button">
+              <svg class="next-button-icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-arrow_forward"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="form-terms">
+            <p class="form-terms__text">
+              Натискаючи на кнопку, ви дає згоду на обробку персональних даних
+              та погоджуєтесь з політикою конфіденційності.
+            </p>
+          </div>
+          <div class="form-questions">
+            <h3 class="form-questions__title">Звідки ви дізналися про нас?</h3>
+          </div>
+        </form>
+      </div>
+
+      <div class="step step-3">
+        <form>
+          <label for="name">Ім’я</label>
+          <input type="text" placeholder="Ім’я" id="name" />
+          <label for="phone">Контактний телефон</label>
+          <input type="tel" placeholder="Укажіть номер телефону" id="phone" />
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            placeholder="Укажіть електронну адресу"
+            id="email"
+          />
+          <div class="form-button-wrapper">
+            <button class="button continue-button" type="button">
+              Підібрати машину
+            </button>
+            <button class="button next-button" type="button">
+              <svg class="next-button-icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-arrow_forward"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="form-terms">
+            <p class="form-terms__text">
+              Натискаючи на кнопку, ви дає згоду на обробку персональних даних
+              та погоджуєтесь з політикою конфіденційності.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

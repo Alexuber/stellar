@@ -1,0 +1,38 @@
+.order-container {
+  border-radius: 32px;
+  color: #fff;
+  background: #0f428f;
+
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.order__title {
+  font-weight: 400;
+  font-size: 36px;
+  font-style: normal;
+
+  margin-bottom: 16px;
+}
+
+.order__desc {
+  margin-bottom: 48px;
+}
+
+.achievments__title {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.achievments__desc {
+  color: #c1c1c1;
+  margin-bottom: 32px;
+}
+
+.achievments__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}

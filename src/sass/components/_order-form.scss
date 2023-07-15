@@ -1,0 +1,277 @@
+.order-form-container {
+  height: 735px;
+  max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 16px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // border-radius: 32px;           ///ToDO разобраться с радиусом
+  background-color: lightgray;
+  border-radius: 32px;
+  background: url(./../images/order-form/water_mob@1x.jpg),
+    lightgray 50% / cover no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url(./../images/order-form/water_mob@2x.jpg),
+      lightgray 50% / cover no-repeat;
+  }
+
+  @media screen and (min-width: 375px) {
+    background: url(./../images/order-form/water_mob@1x.jpg),
+      lightgray 50% / cover no-repeat;
+    height: 735px;
+    max-width: 375px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(./../images/order-form/water_mob@2x.jpg),
+        lightgray 50% / cover no-repeat;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background: url(./../images/order-form/water_tab@1x.jpg),
+      lightgray 50% / cover no-repeat;
+    height: 735px;
+    max-width: 1024px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(./../images/order-form/water_tab@2x.jpg),
+        lightgray 50% / cover no-repeat;
+    }
+  }
+
+  @media screen and (min-width: 1360px) {
+    height: 700px;
+    max-width: 1360px;
+
+    background: url(./../images/order-form/water_ds@1x.jpg),
+      lightgray 50% / cover no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(./../images/order-form/water_ds@2x.jpg),
+        lightgray 50% / cover no-repeat;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    height: 700px;
+    max-width: 1920px;
+
+    background: url(./../images/order-form/water_full@1x.jpg),
+      lightgray 50% / cover no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(./../images/order-form/water_full@2x.jpg),
+        lightgray 50% / cover no-repeat;
+    }
+  }
+}
+
+.form-container {
+  background: #fff;
+  width: 343px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 24px;
+  padding: 24px;
+  height: 655px;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.step h2 {
+  margin-bottom: 10px;
+}
+
+.step input {
+  margin-bottom: 10px;
+}
+
+.next-button,
+.prev-button {
+  margin-top: 10px;
+}
+
+.submit-button {
+  margin-top: 20px;
+}
+
+.pagination {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  display: flex;
+  gap: 85px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pagination-item.active {
+  background: #0f428f;
+  color: #fff;
+}
+
+//Step 1
+
+label {
+  font-size: 20px;
+}
+
+input {
+  display: block;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #c1c1c1;
+  padding: 16px;
+  width: 292px;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  font-size: 16px;
+  line-height: calc(12 / 16);
+}
+
+.form-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.continue-button {
+  width: 245px;
+}
+
+.next-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.next-button-icon {
+  fill: #fff;
+}
+
+.form-terms__text {
+  color: #909090;
+  text-align: center;
+  font-size: 12px;
+}
+
+.form-terms {
+  margin-bottom: 45px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.form-questions__title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.checkbox-button input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox-button {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 100px;
+  background: rgba(193, 193, 193, 0.4);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.checkbox-button input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox-button {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 100px;
+  background: rgba(193, 193, 193, 0.4);
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.checkbox-button:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.checkbox-button.selected {
+  background-color: #0f428f;
+  color: white;
+}
+
+.checkbox-button:hover {
+  background-color: lightgray;
+}
+
+// Step 2
+.truck_select {
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #c1c1c1;
+  padding: 16px;
+  width: 292px;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.option-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-item__type,
+.option-item__capacity {
+  margin: 0;
+}
+
+#email {
+  margin-bottom: 125px;
+}

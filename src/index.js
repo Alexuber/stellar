@@ -71,3 +71,34 @@ checkboxButtons.forEach(button => {
     }
   });
 });
+
+// aboutSlider
+
+const aboutSwiper = new Swiper('.aboutSwiper', {
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  loop: true,
+  width: 220,
+  spaceBetween: 16,
+  navigation: {
+    enabled: true,
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// teamSwiper
+const teamSwiper = new Swiper('.teamSwiper', {
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  loop: true,
+  width: 295,
+  spaceBetween: 0,
+  navigation: {
+    enabled: true,
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

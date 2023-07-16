@@ -35,3 +35,28 @@
 .geography__frame {
   margin-bottom: 32px;
 }
+
+.geography-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.geography-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.geography-list__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.geography-list__text {
+  text-align: center;
+}

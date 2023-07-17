@@ -19,6 +19,10 @@
   font-size: 36px;
   text-align: center;
   margin-bottom: 52px;
+
+  @include media-min(desktop) {
+    font-size: 48px;
+  }
 }
 
 .companies-list {
@@ -27,4 +31,51 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
+
+  @include media-min(desktop) {
+    gap: 66px;
+  }
+}
+
+.img-cocacola {
+  @include media-min(desktop) {
+    width: 128px;
+    height: 40px;
+  }
+}
+.img-pepsico {
+  @include media-min(desktop) {
+    width: 183px;
+    height: 51px;
+  }
+}
+.img-shell {
+  @include media-min(desktop) {
+    width: 58px;
+    height: 66px;
+  }
+}
+.img-vioil {
+  @include media-min(desktop) {
+    width: 105px;
+    height: 30px;
+  }
+}
+.img-agrana {
+  @include media-min(desktop) {
+    width: 131px;
+    height: 75px;
+  }
+}
+.img-dohler {
+  @include media-min(desktop) {
+    width: 107px;
+    height: 71px;
+  }
+}
+.img-roshen {
+  @include media-min(desktop) {
+    width: 142px;
+    height: 34px;
+  }
 }

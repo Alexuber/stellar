@@ -1,5 +1,6 @@
 @import './utils/media';
 @import './utils/fonts';
+@import './utils/visually-hidden';
 @import './base/normalize';
 @import './base/common';
 @import './base/container';
@@ -15,5 +16,7 @@
 @import './components/geography';
 @import './components/about';
 @import './components/team';
-@import './components/calculate';
 @import './components/footer';
+@import './components/mobile-menu';
+@import './components/order-truck-modal';
+@import './components/calculate-price-modal';

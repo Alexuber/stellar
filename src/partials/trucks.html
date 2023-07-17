@@ -9,14 +9,19 @@
           <h2 class="trucks-info__title">Власний автопарк</h2>
         </div>
       </div>
-      <p class="trucks-info__desc">
-        <span class="text-accent">175</span> Автомобілів
-      </p>
-      <div class="trucks-info__brand">
-        <svg class="brand-icon" width="32" height="32">
-          <use href="./images/icons/sprite.svg#icon-volvo"></use>
-        </svg>
-        <p class="brand-text">VOLVO</p>
+      <div class="trucks-brand__wrapper">
+        <p class="trucks-info__desc">
+          <span class="text-accent">175</span> Автомобілів
+        </p>
+        <div class="trucks-info__brand">
+          <img
+            src="./images/trucks/volvo.png"
+            class="brand-icon"
+            alt="volvo logo"
+            width="32"
+          />
+          <p class="brand-text">VOLVO</p>
+        </div>
       </div>
       <div class="about-trucks">
         <p class="about-trucks-desc">
@@ -84,10 +89,12 @@
         </picture>
       </div>
       <div class="loading">
-        <p class="loading-percentage">100</p>
-        <span class="loading-symbol">%</span>
-        <!-- todo процент установить по нижней линии! -->
-        <p class="loading-title">Завантажено в цистерну</p>
+        <div class="loading-wrapper">
+          <p class="loading-percentage">100</p>
+          <span class="loading-symbol">%</span>
+          <!-- todo процент установить по нижней линии! -->
+          <p class="loading-title">Завантажено в цистерну</p>
+        </div>
         <div class="loadin-icon-wrapper">
           <svg class="loading-icon" width="16" height="16">
             <use href="./images/icons/sprite.svg#icon-water_drop"></use>
@@ -105,7 +112,8 @@
         </div>
       </div>
       <p class="trucks-info__desc">
-        Машини вантажопідйомні<br />стю
+        Машини<br />
+        вантажопідйомністю
         <span class="text-accent">до 25,5 тонн</span>
       </p>
       <div class="about-trucks about-categories">

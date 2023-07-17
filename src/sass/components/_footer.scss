@@ -1,5 +1,63 @@
 .footer-container {
-  padding: 0 16px 16px;
+  padding: 105px 16px 16px;
+  @include media-min(tablet) {
+    padding-bottom: 32px;
+  }
+}
+
+.footer-calculate {
+  margin-bottom: 55px;
+
+  @include media-min(tablet) {
+    margin-bottom: 0;
+  }
+  @include media-min(desktop) {
+    width: 385px;
+    margin-right: 310px;
+  }
+  @include media-min(fullHD) {
+    width: 385px;
+    margin-right: 570px;
+  }
+}
+
+.footer-wrapper {
+  @include media-min(tablet) {
+    display: flex;
+    position: relative;
+  }
+}
+
+.calculate {
+  padding-top: 105px;
+  padding-bottom: 55px;
+}
+
+.calculate-container {
+  padding: 0 16px;
+}
+
+.calculate-title {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 24px;
+
+  @include media-min(tablet) {
+    min-width: 370px;
+  }
+}
+
+.calculate-btn {
+  width: 295px;
+  text-align: center;
+
+  @include media-min(tablet) {
+    width: 210px;
+  }
+}
+
+.footer-calc {
+  justify-content: flex-start;
 }
 
 .contacts {
@@ -8,12 +66,33 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
+
+  @include media-min(desktop) {
+    justify-content: flex-start;
+  }
 }
 
 .contacts__item {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
+  max-width: 250px;
+
+  @include media-min(tablet) {
+    &:last-child {
+      margin-bottom: 65px;
+    }
+  }
+  @include media-min(desktop) {
+    &:not(:last-child) {
+      margin-right: 170px;
+    }
+  }
+  @include media-min(fullHD) {
+    &:not(:last-child) {
+      margin-right: 190px;
+    }
+  }
 }
 
 .contacts__item-title {
@@ -35,6 +114,13 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 16px;
+
+  @include media-min(tablet) {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .footer-social__wrapper {
@@ -45,5 +131,34 @@
   height: 32px;
   border-radius: 100px;
   border: 1px solid var(--gray, #c1c1c1);
+  border-color: #c1c1c1;
   background: var(--white, #fff);
+
+  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border-color: #0f428f;
+    .socials-icon {
+      fill: #0f428f;
+    }
+  }
+}
+
+.copyright {
+  @include media-min(tablet) {
+    float: right;
+  }
+  @include media-min(desktop) {
+    float: left;
+    margin-left: 678px;
+  }
+  @include media-min(desktop) {
+    margin-left: 955px;
+  }
+}
+
+.socials-icon {
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }

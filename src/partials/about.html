@@ -2,10 +2,11 @@
   <div class="container about-container">
     <div class="about__main">
       <div class="about-wrapper">
-        <!-- кривая иконка ToDO! -->
-        <svg class="about__icon" width="32" height="32">
-          <use href="./images/icons/sprite.svg#icon-info"></use>
-        </svg>
+        <div class="about-icon__wrapper">
+          <svg class="about__icon" width="24" height="24">
+            <use href="./images/icons/sprite.svg#icon-info"></use>
+          </svg>
+        </div>
         <h3 class="about__title">Чому Stellar?</h3>
       </div>
       <p class="about-desc">Що ми пропонуємо нашим клієнтам?</p>
@@ -97,15 +98,10 @@
             </p>
           </div>
         </div>
-        <!-- If we need pagination -->
         <div class="swiper-pagination about-pagination"></div>
-
-        <!-- If we need navigation buttons -->
         <div class="swiper-button-prev about-prev">
           <svg class="slider-svg" width="32" height="32">
             <use href="./images/icons/sprite.svg#icon-arrow_left"></use>
-
-            <!-- TODO button WHITE color -->
           </svg>
         </div>
         <div class="swiper-button-next about-next">
@@ -115,114 +111,165 @@
         </div>
       </div>
     </div>
-    <div class="about__repair">
-      <div class="about-wrapper">
-        <!-- кривая иконка ToDO! -->
-        <svg class="about__icon" width="32" height="32">
-          <use href="./images/icons/sprite.svg#icon-build"></use>
+    <div class="about-services__wrapper">
+      <div class="about__repair">
+        <div class="about-wrapper">
+          <div class="about-icon__wrapper">
+            <svg class="about__icon" width="24" height="24">
+              <use href="./images/icons/sprite.svg#icon-build"></use>
+            </svg>
+          </div>
+          <h3 class="about__title">2 власних СТО , шиномонтаж, мийка</h3>
+        </div>
+        <p class="about-desc about-repair-desc">
+          Компанія забезпечує своєчасне технічне обслуговування автомобілів.
+        </p>
+        <div class="form-button-wrapper about-rpair__wrapper">
+          <button class="button continue-button about-button" type="button">
+            Записатися
+          </button>
+          <button class="button next-button about-button" type="button">
+            <svg class="next-button-icon about-icon" width="24" height="24">
+              <use href="./images/icons/sprite.svg#icon-arrow_forward"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="about-services">
+        <ul class="about-services-list">
+          <li class="about-services-list__item">
+            <p class="services-list__title">10 боксів обслуговування</p>
+            <p class="services-list__text">
+              10 боксів технічного обслуговування автопоїздів з ділянкою мийки
+              та шиномонтажу.
+            </p>
+          </li>
+          <li class="about-services-list__item">
+            <p class="services-list__title">
+              Станція оснащена сучасним обладнанням
+            </p>
+            <p class="services-list__text">
+              Для ремонту, обслуговування та діагностики вантажних автомобілів і
+              мийки цистерн.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- about-services-Swiper -->
+    <div class="swiper stoSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide stoSlide">
+          <picture class="about-services__img">
+            <source
+              media="(min-width: 1360px)"
+              srcset="
+                ./images/services/ds/repair_ds@1x.jpg 1x,
+                ./images/services/ds/repair_ds@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/services/tab/repair_tab@1x.jpg 1x,
+                ./images/services/tab/repair_tab@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/services/mob/repair_mob@1x.jpg 1x,
+                ./images/services/mob/repair_mob@2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/services/mob/repair_mob@1x.jpg"
+              alt="truck repair station image"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide stoSlide">
+          <picture class="about-services__img">
+            <source
+              media="(min-width: 1360px)"
+              srcset="
+                ./images/services/ds/repair_ds@1x.jpg 1x,
+                ./images/services/ds/repair_ds@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/services/tab/repair_tab@1x.jpg 1x,
+                ./images/services/tab/repair_tab@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/services/mob/repair_mob@1x.jpg 1x,
+                ./images/services/mob/repair_mob@2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/services/mob/repair_mob@1x.jpg"
+              alt="truck repair station image"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-button-next sto-slider-button-next">
+        <svg class="sto-slider-icon" width="32" height="32">
+          <use href="./images/icons/sprite.svg#icon-arrow_right"></use>
         </svg>
-        <h3 class="about__title">2 власних СТО , шиномонтаж, мийка</h3>
       </div>
-      <p class="about-desc about-repair-desc">
-        Що ми пропонуємо нашим клієнтам?
-      </p>
-      <div class="form-button-wrapper about-rpair__wrapper">
-        <button class="button continue-button about-button" type="button">
-          Записатися
-        </button>
-        <button class="button next-button about-button" type="button">
-          <svg class="next-button-icon about-icon" width="24" height="24">
-            <use href="./images/icons/sprite.svg#icon-arrow_forward"></use>
+      <div class="swiper-button-prev sto-slider-button-prev">
+        <svg class="sto-slider-icon" width="32" height="32">
+          <use href="./images/icons/sprite.svg#icon-arrow_left"></use>
+        </svg>
+      </div>
+    </div>
+    <ul class="addidtional-services">
+      <li class="additional-services__item">
+        <div class="additional-services__wrapper">
+          <svg class="additional-services__icon" width="48" height="48">
+            <use href="./images/icons/sprite.svg#icon-tire_repair"></use>
           </svg>
-        </button>
-      </div>
-    </div>
-    <div class="about-services">
-      <ul class="about-services-list">
-        <li class="about-services-list__item">
-          <p class="services-list__title">10 боксів обслуговування</p>
-          <p class="services-list__text">
-            10 боксів технічного обслуговування автопоїздів з ділянкою мийки та
-            шиномонтажу.
-          </p>
-        </li>
-        <li class="about-services-list__item">
-          <p class="services-list__title">
-            Станція оснащена сучасним обладнанням
-          </p>
-          <p class="services-list__text">
-            Для ремонту, обслуговування та діагностики вантажних автомобілів і
-            мийки цистерн.
-          </p>
-        </li>
-      </ul>
-      <picture class="about-services__img">
-        <source
-          media="(min-width: 1360px)"
-          srcset="
-            ./images/services/ds/repair_ds@1x.jpg 1x,
-            ./images/services/ds/repair_ds@2x.jpg 2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/services/tab/repair_tab@1x.jpg 1x,
-            ./images/services/tab/repair_tab@2x.jpg 2x
-          "
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/services/mob/repair_mob@1x.jpg 1x,
-            ./images/services/mob/repair_mob@2x.jpg 2x
-          "
-        />
-        <img
-          src="./images/services/mob/repair_mob@1x.jpg"
-          alt="truck repair station image"
-        />
-      </picture>
-      <ul class="addidtional-services">
-        <li class="additional-services__item">
-          <div class="additional-services__wrapper">
-            <svg class="additional-services__icon" width="48" height="48">
-              <use href="./images/icons/sprite.svg#icon-tire_repair"></use>
-            </svg>
-          </div>
-          <p class="additional-servisec__desc">Шиномонтаж</p>
-        </li>
-        <li class="additional-services__item">
-          <div class="additional-services__wrapper">
-            <svg class="additional-services__icon" width="48" height="48">
-              <use href="./images/icons/sprite.svg#icon-construction"></use>
-            </svg>
-          </div>
-          <p class="additional-servisec__desc">Ремонт</p>
-        </li>
-        <li class="additional-services__item">
-          <div class="additional-services__wrapper">
-            <svg class="additional-services__icon" width="48" height="48">
-              <use href="./images/icons/sprite.svg#icon-car_wash"></use>
-            </svg>
-          </div>
-          <p class="additional-servisec__desc">Мийка</p>
-        </li>
-        <li class="additional-services__item">
-          <div class="additional-services__wrapper">
-            <svg class="additional-services__icon" width="48" height="48">
-              <use href="./images/icons/sprite.svg#icon-saved"></use>
-            </svg>
-          </div>
-          <p class="additional-servisec__desc">Діагностика</p>
-        </li>
-      </ul>
-    </div>
+        </div>
+        <p class="additional-servisec__desc">Шиномонтаж</p>
+      </li>
+      <li class="additional-services__item">
+        <div class="additional-services__wrapper">
+          <svg class="additional-services__icon" width="48" height="48">
+            <use href="./images/icons/sprite.svg#icon-construction"></use>
+          </svg>
+        </div>
+        <p class="additional-servisec__desc">Ремонт</p>
+      </li>
+      <li class="additional-services__item">
+        <div class="additional-services__wrapper">
+          <svg class="additional-services__icon" width="48" height="48">
+            <use href="./images/icons/sprite.svg#icon-car_wash"></use>
+          </svg>
+        </div>
+        <p class="additional-servisec__desc">Мийка</p>
+      </li>
+      <li class="additional-services__item">
+        <div class="additional-services__wrapper">
+          <svg class="additional-services__icon" width="48" height="48">
+            <use href="./images/icons/sprite.svg#icon-saved"></use>
+          </svg>
+        </div>
+        <p class="additional-servisec__desc">Діагностика</p>
+      </li>
+    </ul>
     <div class="about__main about-clients">
       <div class="about-wrapper about-clients-wrapper">
         <h3 class="about-clients__title">Клієнти</h3>
       </div>
-      <p class="about-desc">Понад 500 постійних клієнтів в Україні та Європі</p>
+      <p class="about-desc about-desc-info">
+        Понад 500 постійних клієнтів в Україні та Європі
+      </p>
       <p class="about-clients__info">
         Нам довіряють міжнародне перевезення вантажів великі промислові та
         виробничі компанії світового масштабу.
@@ -233,6 +280,7 @@
             src="./images/hero/partners/ferrero.png"
             alt="ferrero logo"
             width="103"
+            class="img-ferrero"
           />
         </li>
         <li class="about-clients-list__item">
@@ -240,6 +288,7 @@
             src="./images/hero/partners/cocacola.png"
             alt="cocacola logo"
             width="71"
+            class="img-cocacola"
           />
         </li>
         <li class="about-clients-list__item">
@@ -247,6 +296,7 @@
             src="./images/hero/partners/pepsico-logo_pepsico.png"
             alt="pepsico logo"
             width="103"
+            class="img-pepsico"
           />
         </li>
         <li class="about-clients-list__item">
@@ -254,6 +304,7 @@
             src="./images/hero/partners/Cargill_logo.png"
             alt="Cargill logo"
             width="57"
+            class="img-Cargill"
           />
         </li>
         <li class="about-clients-list__item">
@@ -261,6 +312,7 @@
             src="./images/hero/partners/vioil.png"
             alt="vioil logo"
             width="42"
+            class="img-vioil"
           />
         </li>
         <li class="about-clients-list__item">
@@ -268,6 +320,7 @@
             src="./images/hero/partners/shell.png"
             alt="shell logo"
             width="31"
+            class="img-shell"
           />
         </li>
         <li class="about-clients-list__item">
@@ -275,6 +328,7 @@
             src="./images/hero/partners/okko.png"
             alt="okko logo"
             width="51"
+            class="img-okko"
           />
         </li>
         <li class="about-clients-list__item">
@@ -282,6 +336,7 @@
             src="./images/hero/partners/roshen.png"
             alt="roshen logo"
             width="65"
+            class="img-roshen"
           />
         </li>
         <li class="about-clients-list__item">
@@ -289,6 +344,7 @@
             src="./images/hero/partners/archer.png"
             alt="adm logo"
             width="36"
+            class="img-adm"
           />
         </li>
         <li class="about-clients-list__item">
@@ -296,6 +352,7 @@
             src="./images/hero/partners/agrana.png"
             alt="agrana logo"
             width="71"
+            class="img-agrana"
           />
         </li>
         <li class="about-clients-list__item">
@@ -303,6 +360,7 @@
             src="./images/hero/partners/rauch.png"
             alt="rauch logo"
             width="74"
+            class="img-rauch"
           />
         </li>
         <li class="about-clients-list__item">
@@ -310,6 +368,7 @@
             src="./images/hero/partners/doehler_pos_dohler.png"
             alt="dohler logo"
             width="60"
+            class="img-dohler"
           />
         </li>
         <li class="about-clients-list__item">
@@ -317,6 +376,7 @@
             src="./images/hero/partners/linde.png"
             alt="linde logo"
             width="79"
+            class="img-linde"
           />
         </li>
         <li class="about-clients-list__item">
@@ -324,6 +384,7 @@
             src="./images/hero/partners/Orlen.png"
             alt="Orlen logo"
             width="50"
+            class="img-Orlen"
           />
         </li>
       </ul>

@@ -3,12 +3,30 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  @include media-min(tablet) {
+    overflow: hidden;
+    padding-right: 16px;
+  }
+  @include media-min(desktop) {
+    padding-left: 32px;
+  }
+  @include media-min(desktop) {
+    padding-left: 32px;
+  }
+  @include media-min(fullHD) {
+    padding-left: 350px;
+    padding-right: 350px;
+  }
 }
 
 //Swiper
 .swiper {
   margin-left: 0;
   margin-right: 0;
+}
+
+.mySwiper .slider-svg {
+  fill: #0f428f;
 }
 
 .swiper-wrapper {
@@ -29,6 +47,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include media-min(tablet) {
+    width: 325px;
+  }
+  @include media-min(desktop) {
+    width: 390px;
+    height: 595px;
+  }
 }
 
 .swiper-button-prev,
@@ -36,6 +61,14 @@
   top: 609px;
   left: 107px;
   right: auto;
+
+  @include media-min(tablet) {
+    left: 40%;
+  }
+  @include media-min(desktop) {
+    top: 635px;
+    left: 44%;
+  }
 }
 
 .swiper-button-next,
@@ -43,4 +76,11 @@
   right: 107px;
   left: auto;
   top: 609px;
+  @include media-min(tablet) {
+    right: 40%;
+  }
+  @include media-min(desktop) {
+    top: 635px;
+    right: 44%;
+  }
 }

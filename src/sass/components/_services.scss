@@ -26,6 +26,16 @@
   text-align: center;
   padding: 0 34px;
   margin-bottom: 24px;
+
+  @include media-min(tablet) {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include media-min(desktop) {
+    font-size: 48px;
+    width: 905px;
+  }
 }
 
 .services__info-text {
@@ -41,6 +51,9 @@
   margin-right: auto;
   margin-bottom: 16px;
   text-align: center;
+  @include media-min(desktop) {
+    font-size: 16px;
+  }
 }
 
 .services__animation {
@@ -61,6 +74,13 @@
 
   width: 73px;
   height: 32px;
+}
+
+.services__animation img {
+  @include media-min(desktop) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .income-text {

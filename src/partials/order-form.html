@@ -79,46 +79,20 @@
       <div class="step step-2">
         <form>
           <label for="date">Дата відправлення</label>
-          <input type="date" placeholder="04.06.2023" id="date" />
+          <input type="date" id="date" />
           <label for="description">Опис вантажу</label>
           <input type="text" placeholder="Меблі" id="description" />
           <label for="truck-type">Тип напівпричему</label>
           <select class="truck_select" id="truck-type" name="truck-type">
-            <option value="Танк контейнер">
-              <div class="option-item">
-                <p class="option-item__type">Танк контейнер</p>
-                <p class="option-item__capacity">96 м3</p>
-              </div>
-            </option>
-            <option value="Цистерна">
-              <div class="option-item">
-                <p class="option-item__type">Цистерна</p>
-                <p class="option-item__capacity">32 м3</p>
-              </div>
-            </option>
-            <option value="Тент">
-              <div class="option-item">
-                <p class="option-item__type">Тент</p>
-                <p class="option-item__capacity">96 м3</p>
-              </div>
-            </option>
-            <option value="Сілосовоз">
-              <div class="option-item">
-                <p class="option-item__type">Сілосовоз</p>
-                <p class="option-item__capacity">60 м3</p>
-              </div>
-            </option>
+            <option value="Танк контейнер">Танк контейнер (96 м3)</option>
+            <option value="Цистерна">Цистерна (32 м3)</option>
+            <option value="Тент">Тент (96 м3)</option>
+            <option value="Сілосовоз">Сілосовоз (60 м3)</option>
             <option value="Платформа контейнеровоз 20">
-              <div class="option-item">
-                <p class="option-item__type">Платформа контейнеровоз</p>
-                <p class="option-item__capacity">20 футів</p>
-              </div>
+              Платформа контейнеровоз (20 футів)
             </option>
             <option value="Платформа контейнеровоз 40">
-              <div class="option-item">
-                <p class="option-item__type">Платформа контейнеровоз</p>
-                <p class="option-item__capacity">40 футів</p>
-              </div>
+              Платформа контейнеровоз (40 футів)
             </option></select
           ><label for="weight">Вага</label>
           <input type="number" placeholder="1" id="weight" />
@@ -138,9 +112,6 @@
               та погоджуєтесь з політикою конфіденційності.
             </p>
           </div>
-          <div class="form-questions">
-            <h3 class="form-questions__title">Звідки ви дізналися про нас?</h3>
-          </div>
         </form>
       </div>
 
@@ -157,7 +128,10 @@
             id="email"
           />
           <div class="form-button-wrapper">
-            <button class="button continue-button" type="button">
+            <button
+              class="button continue-button finish-form-btn"
+              type="button"
+            >
               Підібрати машину
             </button>
             <button class="button next-button" type="button">

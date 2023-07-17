@@ -1,16 +1,47 @@
 <header class="header">
   <div class="container header__container">
-    <a href="/" class="header__logo"
-      ><img src="./images/header-logo.png" alt="logo" width="98" height="40"
-    /></a>
-    <button
-      class="js-open-menu menu-toggle"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg class="icon__burger" width="24" height="24">
-        <use class="burger" href="./images/icons/sprite.svg#icon-menu"></use>
-      </svg>
-    </button>
+    <div class="header-switcher__wrapper">
+      <a href="/" class="header__logo"
+        ><img src="./images/header-logo.png" alt="logo" width="98" height="40"
+      /></a>
+      <button
+        class="js-open-menu menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="icon__burger" width="24" height="24">
+          <use class="burger" href="./images/icons/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <ul class="language-switcher">
+        <li class="active"><a href="#">UA</a></li>
+        <li><a href="#">ENG</a></li>
+      </ul>
+    </div>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-list__item header-nav-list__item--active">
+          <a href="/" class="nav-list__item-text">Про компанію</a>
+        </li>
+        <li class="header-nav-list__item">
+          <a href="/" class="nav-list__item-text">Послуги</a>
+        </li>
+        <li class="header-nav-list__item">
+          <a href="/" class="nav-list__item-text">СТО</a>
+        </li>
+        <li class="header-nav-list__item">
+          <a href="/" class="nav-list__item-text">Клієнти</a>
+        </li>
+        <li class="header-nav-list__item">
+          <a href="/" class="nav-list__item-text">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-contacts">
+      <button class="button header-contacts__btn">Замовити дзвінок</button>
+      <p class="header-contacts__phone">
+        <a href="tel:+380503390387">+38 050 339 03 87</a>
+      </p>
+    </div>
   </div>
 </header>

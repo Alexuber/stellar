@@ -71,6 +71,10 @@
 .statistics {
   padding-top: 357px;
   position: relative;
+
+  @include media-min(desktop) {
+    padding-top: 475px;
+  }
 }
 
 .statistics__list {
@@ -79,6 +83,10 @@
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
+
+  @include media-min(desktop) {
+    gap: 100px;
+  }
 }
 
 .statistics__list__item {
@@ -87,14 +95,28 @@
   align-self: stretch;
   width: 164px;
   margin-bottom: 16px;
+
+  @include media-min(tablet) {
+    margin-bottom: 0px;
+  }
+  @include media-min(desktop) {
+    &:nth-child(2) {
+      margin-right: 270px;
+    }
+  }
 }
 
 .statistics__text {
   color: #fff;
   text-align: center;
   font-size: 48px;
+
   margin-bottom: 8px;
   position: relative;
+
+  @include media-min(desktop) {
+    font-size: 96px;
+  }
 }
 
 .statistics__desc {
@@ -106,6 +128,14 @@
   position: absolute;
   top: 15px;
   right: 15px;
+
+  @include media-min(tablet) {
+    display: none;
+  }
+  @include media-min(desktop) {
+    display: block;
+    top: -64px;
+  }
 }
 
 .socials__list {
@@ -132,5 +162,22 @@
 .features-logo {
   position: absolute;
   bottom: 70px;
-  left: 133px;
+  left: 50%;
+  transform: translate(-50%);
+
+  @include media-min(desktop) {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.companies-desc {
+  @include media-min(tablet) {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include media-min(desktop) {
+    width: 500px;
+  }
 }

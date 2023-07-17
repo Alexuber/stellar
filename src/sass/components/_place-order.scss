@@ -1,3 +1,22 @@
+.order-wrapper {
+  @include media-min(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.place-order {
+  @include media-min(desktop) {
+    height: 700px;
+    width: 595px;
+  }
+  @include media-min(fullHD) {
+    width: 875px;
+  }
+}
+
 .order-container {
   border-radius: 32px;
   color: #fff;
@@ -5,6 +24,10 @@
 
   padding: 24px;
   margin-bottom: 16px;
+
+  @include media-min(fullHD) {
+    padding: 32px;
+  }
 }
 
 .order__title {
@@ -35,4 +58,8 @@
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+
+  @include media-min(tablet) {
+    justify-content: flex-start;
+  }
 }

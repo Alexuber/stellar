@@ -1,9 +1,18 @@
 .geography {
-  padding: 100px 0 72px;
+  padding: 100px 0 0;
 }
 
 .geography-container {
   padding: 0 16px;
+}
+
+.geography-wrapper {
+  display: none;
+
+  @include media-min(desktop) {
+    display: block;
+    position: relative;
+  }
 }
 
 .geography__title {
@@ -24,16 +33,30 @@
   font-size: 36px;
   text-align: center;
   margin-bottom: 16px;
+
+  @include media-min(desktop) {
+    font-size: 48px;
+  }
 }
 
 .geography__text {
   font-size: 16px;
   margin-bottom: 32px;
   text-align: center;
+
+  @include media-min(desktop) {
+    width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .geography__frame {
   margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
 }
 
 .geography-list {
@@ -41,6 +64,14 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
+
+  @include media-min(desktop) {
+    gap: 595px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .geography-list__item {
@@ -59,4 +90,8 @@
 
 .geography-list__text {
   text-align: center;
+
+  @include media-min(tablet) {
+    width: 250px;
+  }
 }

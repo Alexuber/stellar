@@ -1,0 +1,48 @@
+<div class="backdrop backdrop--is-hidden" data-calculate-modal>
+  <div class="truck-modal calculate-modal">
+    <button class="truck-modal__btn" type="button" data-calculate-modal-close>
+      <svg class="modal-truck__icon" width="16" height="16">
+        <use href="./images/icons/sprite.svg#icon-close-mobile-menu"></use>
+      </svg>
+    </button>
+    <p class="trucks-info__desc--modal">
+      Розрахуємо вартість транспортування вашого вантажу
+      <span class="text-accent">за 15 хвилин</span>
+    </p>
+    <form class="truck-modal-form">
+      <label for="truck-modal-form__name">Ім’я</label>
+      <input type="text" placeholder="Ім’я" id="truck-modal-form__name" />
+      <label for="truck-modal-form__phone">Контактний телефон</label>
+      <input
+        type="tel"
+        placeholder="Укажіть номер телефону"
+        id="truck-modal-form__phone"
+      />
+      <label for="truck-modal-form__email">E-mail</label>
+      <input
+        type="email"
+        placeholder="Укажіть електронну адресу"
+        id="truck-modal-form__email"
+      />
+      <div class="form-button-wrapper truck-modal-form__wrapper">
+        <button
+          class="button continue-button finish-form-btn truck-modal-form__btn"
+          type="button"
+        >
+          Розрахувати вартість
+        </button>
+        <button class="button next-button" type="button">
+          <svg class="list__item__svg" width="24" height="24">
+            <use href="./images/icons/sprite.svg#icon-calculate"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="form-terms">
+        <p class="form-terms__text">
+          Натискаючи на кнопку, ви дає згоду на обробку персональних даних та
+          погоджуєтесь з політикою конфіденційності.
+        </p>
+      </div>
+    </form>
+  </div>
+</div>

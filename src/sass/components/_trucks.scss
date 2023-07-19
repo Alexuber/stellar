@@ -74,13 +74,12 @@
 }
 
 .about-trucks-desc {
-  margin-bottom: 40px;
-
   @include media-min(tablet) {
     width: 475px;
   }
 }
 .truck-animation {
+  margin-top: 40px;
   position: relative;
   padding-top: 60px;
   margin-bottom: 70px;

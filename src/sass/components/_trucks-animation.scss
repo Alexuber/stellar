@@ -1,0 +1,38 @@
+.loadin-icon-wrapper {
+  position: relative;
+  /* Добавьте высоту, чтобы было место для движения иконки */
+  height: 40px;
+  width: 40px;
+}
+
+.loading-icon {
+  position: absolute;
+  top: 20%;
+  animation: icon-animation 1500ms infinite;
+}
+
+@keyframes icon-animation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes hide-crane-animation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}

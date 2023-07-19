@@ -3,13 +3,11 @@ const paginationItems = document.querySelectorAll('.pagination-item');
 
 paginationItems.forEach((item, index) => {
   item.addEventListener('click', () => {
-    // Удалить класс 'active' у всех этапов и пунктов навигации
     steps.forEach(step => step.classList.remove('active'));
     paginationItems.forEach(paginationItem =>
       paginationItem.classList.remove('active')
     );
 
-    // Добавить класс 'active' только для выбранного этапа и пункта навигации
     steps[index].classList.add('active');
     paginationItems[index].classList.add('active');
   });
@@ -29,6 +27,12 @@ function nextStep() {
   if (currentPaginationItem.nextElementSibling) {
     currentPaginationItem.classList.remove('active');
     currentPaginationItem.nextElementSibling.classList.add('active');
+    currentPaginationItem.querySelector(
+      '.pagination-item-number'
+    ).style.display = 'none';
+    currentPaginationItem.classList.add('passed');
+    currentPaginationItem.querySelector('.pagination-item-icon').style.display =
+      'inline-block';
   }
 }
 

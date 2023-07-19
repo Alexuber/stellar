@@ -7,3 +7,4 @@ import './js/mobile-menu';
 import './js/validation';
 import './js/order-truck-modal';
 import './js/calculate-price-modal';
+import './js/language-switcher';

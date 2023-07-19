@@ -123,6 +123,11 @@
   margin-bottom: 10px;
 }
 
+.pagination-item-icon {
+  display: none;
+  fill: #fff;
+}
+
 .next-button,
 .prev-button {
   margin-top: 10px;
@@ -166,10 +171,13 @@
 }
 
 .pagination-item.active {
-  background: #0f428f;
+  background-color: var(--blue-main, #0f428f);
   color: #fff;
 }
 
+.passed {
+  background-color: var(--blue-main, #0f428f);
+}
 //Step 1
 
 label {

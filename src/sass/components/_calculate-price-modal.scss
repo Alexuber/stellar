@@ -1,3 +1,6 @@
 .calculate-modal {
-  height: 677px;
+  height: 687px;
+  @include media-max(mobile) {
+    height: 600px;
+  }
 }

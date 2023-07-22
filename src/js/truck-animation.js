@@ -1,65 +1,70 @@
-// Функция для анимации отсчета
 function animateCounter(element, duration) {
   let currentCount = 0;
   const finalCount = parseInt(element.innerText, 10);
-  const increment = finalCount / (duration / 500); // Изменено для отсчета каждые 500 мс
-
+  const increment = finalCount / 20;
   const timer = setInterval(() => {
     currentCount += increment;
     if (currentCount >= finalCount) {
       element.innerText = finalCount;
       clearInterval(timer);
-      hideTrucksCrane(); // Скрытие элемента .trucks__crane
-      stopIconAnimation(); // Остановка анимации иконки
+      hideTrucksCraneAndMain();
+      stopIconAnimation();
     } else {
       element.innerText = Math.floor(currentCount);
     }
-  }, 500); // Изменено для отсчета каждые 500 мс
+  }, 500);
 }
 
-// Проверка видимости элемента при прокрутке страницы
 function isElementInViewport(element) {
   const rect = element.getBoundingClientRect();
   const windowHeight =
     window.innerHeight || document.documentElement.clientHeight;
 
-  return rect.top >= 0 && rect.left >= 0 && rect.bottom <= windowHeight;
+  return rect.top < windowHeight && rect.bottom > 0;
 }
-// Функция для скрытия элемента .trucks__crane
-function hideTrucksCrane() {
+
+function hideTrucksCraneAndMain() {
   const trucksCrane = document.querySelector('.trucks__crane');
-  trucksCrane.style.animation = 'hide-crane-animation 1s forwards';
+  const trucksMain = document.querySelector('.trucks__main img');
+
+  trucksCrane.style.animation = 'hide-crane-animation 2s forwards';
+  trucksMain.style.animation = 'hide-main-animation 2s forwards';
+  setTimeout(moveUpElements, 0);
 }
+
+function moveUpElements() {
+  const loadingBlock = document.querySelector('.loading');
+  const trucksCategories = document.querySelector('.trucks__categoties');
+  const truckAnimationBlock = document.querySelector('.truck-animation');
+  loadingBlock.style.animation = 'moveUp 1s forwards';
+
+  setTimeout(() => {
+    trucksCategories.style.animation = 'moveUp 1s forwards';
+  }, 500);
+
+  truckAnimationBlock.style.animation = 'moveUpAndFadeOut 2s forwards';
+}
+
 function stopIconAnimation() {
   const loadingIcon = document.querySelector('.loading-icon');
-  loadingIcon.style.animation = 'none'; // Установка анимации в "none"
+  loadingIcon.style.animation = 'none';
 }
 
-// Обработчик события прокрутки страницы
-window.addEventListener('scroll', () => {
+let animationStarted = false;
+
+function startTrucksAnimation() {
   const trucksSection = document.querySelector('.trucks');
   const loadingPercentage = document.querySelector('.loading-percentage');
 
-  if (
-    isElementInViewport(trucksSection) &&
-    !trucksSection.classList.contains('animated')
-  ) {
-    // Запуск анимации только при первом появлении секции на экране
+  if (isElementInViewport(trucksSection) && !animationStarted) {
+    console.log('in view -->');
+
+    animationStarted = true;
     trucksSection.classList.add('animated');
-    animateCounter(loadingPercentage, 5000); // Измените значение 5000 на 500 для отсчета каждые 500 мс
+    animateCounter(loadingPercentage, 5000);
   }
-});
+}
 
-// Проверка видимости элемента при загрузке страницы
-window.addEventListener('DOMContentLoaded', () => {
-  const trucksSection = document.querySelector('.trucks');
-  const loadingPercentage = document.querySelector('.loading-percentage');
-
-  //   if (
-  //     isElementInViewport(trucksSection) &&
-  //     !trucksSection.classList.contains('animated')
-  //   ) {
-  trucksSection.classList.add('animated');
-  animateCounter(loadingPercentage, 5000); // Измените значение 5000 на 500 для отсчета каждые 500 мс
-  //   }
+window.addEventListener('scroll', () => {
+  startTrucksAnimation();
 });

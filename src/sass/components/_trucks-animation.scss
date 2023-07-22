@@ -11,6 +11,10 @@
   animation: icon-animation 1500ms infinite;
 }
 
+.trucks__crane {
+  z-index: 10;
+}
+
 @keyframes icon-animation {
   0% {
     transform: translateY(0);
@@ -34,5 +38,83 @@
   100% {
     transform: translateY(-100%);
     opacity: 0;
+  }
+}
+/* Добавьте класс .move-left-animation для анимации движения влево */
+@keyframes hide-main-animation {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  0% {
+    transform: translateX(20%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.trucks__main {
+  position: relative;
+  /* Добавьте начальное положение вправо */
+  left: 0;
+  opacity: 1;
+  animation: none;
+}
+
+/* Анимация поднятия и исчезновения блока .truck-animation */
+@keyframes moveUpAndFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(
+      -100%
+    ); /* Измените значение на желаемую высоту подъема */
+  }
+}
+
+/* Анимация поднятия блока .loading и .trucks__categoties */
+@keyframes moveUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-250px); /* Default value for all screen sizes */
+  }
+}
+
+/* Анимация поднятия блока .loading и .trucks__categoties на планшетах */
+@media (min-width: 768px) and (max-width: 1359px) {
+  @keyframes moveUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(
+        -400px
+      ); /* Измените значение на желаемую высоту подъема для планшетов */
+    }
+  }
+}
+
+/* Анимация поднятия блока .loading и .trucks__categoties на больших экранах */
+@media (min-width: 1359px) and (max-width: 1920px) {
+  @keyframes moveUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(
+        -500px
+      ); /* Измените значение на желаемую высоту подъема для больших экранов */
+    }
   }
 }

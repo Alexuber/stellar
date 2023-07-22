@@ -140,6 +140,7 @@
 
 .loading-percentage {
   margin-right: 16px;
+  width: 115px;
 
   color: #0f428f;
   font-size: 72px;
@@ -147,6 +148,7 @@
 
   @include media-min(desktop) {
     font-size: 96px;
+    width: 154px;
   }
 }
 

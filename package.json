@@ -2,20 +2,20 @@
   "name": "rgb-test",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/Alexuber/RGB_test",
+  "homepage": "https://github.com/Alexuber/stellar",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /RGB_test/"
+    "build": "parcel build src/*.html --public-url /stellar/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alexuber/RGB_test"
+    "url": "git+https://github.com/Alexuber/stellar"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Alexander Repeta <alexuberbuber@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Alexuber/RGB_test/issues"
+    "url": "https://github.com/Alexuber/stellar/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",

@@ -1,6 +1,5 @@
 .loadin-icon-wrapper {
   position: relative;
-  /* Добавьте высоту, чтобы было место для движения иконки */
   height: 40px;
   width: 40px;
 }
@@ -40,7 +39,7 @@
     opacity: 0;
   }
 }
-/* Добавьте класс .move-left-animation для анимации движения влево */
+
 @keyframes hide-main-animation {
   0% {
     transform: translateX(0);
@@ -58,7 +57,6 @@
 
 .trucks__main {
   position: relative;
-  /* Добавьте начальное положение вправо */
   left: 0;
   opacity: 1;
   animation: none;
@@ -72,9 +70,7 @@
   }
   100% {
     opacity: 0;
-    transform: translateY(
-      -100%
-    ); /* Измените значение на желаемую высоту подъема */
+    transform: translateY(-100%);
   }
 }
 
@@ -89,7 +85,6 @@
   }
 }
 
-/* Анимация поднятия блока .loading и .trucks__categoties на планшетах */
 @media (min-width: 768px) and (max-width: 1359px) {
   @keyframes moveUp {
     0% {
@@ -97,14 +92,11 @@
       transform: translateY(0);
     }
     100% {
-      transform: translateY(
-        -400px
-      ); /* Измените значение на желаемую высоту подъема для планшетов */
+      transform: translateY(-400px);
     }
   }
 }
 
-/* Анимация поднятия блока .loading и .trucks__categoties на больших экранах */
 @media (min-width: 1359px) and (max-width: 1920px) {
   @keyframes moveUp {
     0% {
@@ -112,9 +104,7 @@
       transform: translateY(0);
     }
     100% {
-      transform: translateY(
-        -500px
-      ); /* Измените значение на желаемую высоту подъема для больших экранов */
+      transform: translateY(-500px);
     }
   }
 }

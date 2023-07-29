@@ -11,18 +11,28 @@
     </p>
     <form class="truck-modal-form">
       <label for="truck-modal-form__name">Ім’я</label>
-      <input type="text" placeholder="Ім’я" id="truck-modal-form__name" />
+      <input
+        type="text"
+        placeholder="Ім’я"
+        id="truck-modal-form__name"
+        required
+        minlength="2"
+      />
       <label for="truck-modal-form__phone">Контактний телефон</label>
       <input
         type="tel"
         placeholder="Укажіть номер телефону"
         id="truck-modal-form__phone"
+        required
+        minlength="13"
+        maxlength="13"
       />
       <label for="truck-modal-form__email">E-mail</label>
       <input
         type="email"
         placeholder="Укажіть електронну адресу"
         id="truck-modal-form__email"
+        required
       />
       <div class="form-button-wrapper truck-modal-form__wrapper">
         <button
@@ -40,7 +50,8 @@
       <div class="form-terms">
         <p class="form-terms__text">
           Натискаючи на кнопку, ви дає згоду на обробку персональних даних та
-          погоджуєтесь з політикою конфіденційності.
+          погоджуєтесь з
+          <a class="terms-href" href="/">політикою конфіденційності</a> .
         </p>
       </div>
     </form>

@@ -10,6 +10,10 @@
 
   padding: 32px 16px;
 
+  @include media-min(desktop) {
+    padding-top: 120px;
+  }
+
   @include media-min(fullHD) {
     padding-left: 300px;
   }
@@ -40,6 +44,13 @@
   @include media-min(desktop) {
     font-size: 48px;
     width: 595px;
+    margin-left: 48px;
+  }
+}
+
+.about-info {
+  @include media-min(desktop) {
+    margin-left: 48px;
   }
 }
 
@@ -125,6 +136,7 @@
   }
   @media screen and (min-width: 1360px) {
     min-width: 645px;
+    margin-left: 48px;
   }
 }
 
@@ -168,9 +180,12 @@
 
 .about-rpair__wrapper {
   margin-bottom: 48px;
-
   @include media-min(tablet) {
     justify-content: flex-start;
+  }
+  @include media-min(desktop) {
+    margin-left: 48px;
+    margin-bottom: 0;
   }
   @include media-min(fullHD) {
     margin-bottom: 145px;
@@ -182,6 +197,13 @@
     display: flex;
     gap: 16px;
   }
+  @include media-min(desktop) {
+    gap: 95px;
+    margin-bottom: 125px;
+  }
+  @include media-min(fullHD) {
+    margin-bottom: 0;
+  }
 }
 
 .about-services-list {
@@ -189,6 +211,10 @@
   gap: 16px;
   justify-content: center;
   margin-bottom: 48px;
+
+  @include media-min(desktop) {
+    margin-top: 45px;
+  }
 }
 
 .about-services-list__item {
@@ -227,6 +253,11 @@
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 72px;
+
+  @include media-min(desktop) {
+    gap: 90px;
+    margin-bottom: 48px;
+  }
 
   @include media-min(fullHD) {
     width: 1216px;
@@ -273,11 +304,21 @@
   }
 }
 .about-desc-info {
-  @include media-min(desktop) {
-    margin-right: auto;
+  text-align: center;
+  @include media-min(tablet) {
+    width: 500px;
     margin-left: auto;
+    margin-right: auto;
+  }
+  @include media-min(desktop) {
     text-align: center;
     width: 772px;
+  }
+}
+
+.continue-button {
+  @include media-max(tablet) {
+    width: 295px;
   }
 }
 
@@ -292,7 +333,12 @@
   align-items: center;
   gap: 24px;
 
+  @include media-min(tablet) {
+    margin: 0 120px;
+  }
+
   @include media-min(desktop) {
+    margin: 0;
     gap: 48px;
   }
 }

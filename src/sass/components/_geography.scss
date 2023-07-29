@@ -53,6 +53,16 @@
   margin-right: auto;
   text-align: center;
   display: flex;
+
+  @include media-min(tablet) {
+    width: 490px;
+    height: 495px;
+  }
+
+  @include media-min(desktop) {
+    width: 475px;
+    height: 480px;
+  }
 }
 
 .geography-list {
@@ -61,10 +71,14 @@
   justify-content: center;
   gap: 16px;
 
+  @include media-min(tablet) {
+    gap: 258px;
+  }
+
   @include media-min(desktop) {
     gap: 595px;
     position: absolute;
-    bottom: 50%;
+    bottom: 37%;
     left: 50%;
     transform: translate(-50%);
   }
@@ -75,6 +89,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 16px;
 }
 
 .geography-list__icon {

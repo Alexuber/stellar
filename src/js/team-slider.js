@@ -5,7 +5,7 @@ const teamSwiper = new Swiper('.teamSwiper', {
   loop: true,
   slidesPerView: 1,
   // width: 295,
-  spaceBetween: 0,
+  spaceBetween: 48,
   navigation: {
     enabled: true,
     nextEl: '.swiper-button-next',

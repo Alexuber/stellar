@@ -12,6 +12,9 @@
 
 .companies {
   padding-bottom: 32px;
+
+  @include media-min(tablet) {
+  }
 }
 
 .companies-desc {

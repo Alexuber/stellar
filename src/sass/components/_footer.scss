@@ -13,7 +13,8 @@
   }
   @include media-min(desktop) {
     width: 385px;
-    margin-right: 310px;
+    margin-right: 220px;
+    margin-left: 72px;
   }
   @include media-min(fullHD) {
     width: 385px;
@@ -43,8 +44,18 @@
   margin-bottom: 24px;
 
   @include media-min(tablet) {
-    min-width: 370px;
+    width: 370px;
+    margin-right: 130px;
   }
+  @include media-min(desktop) {
+    font-size: 48px;
+    min-width: 513px;
+  }
+}
+
+.teamSwiper {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .calculate-btn {
@@ -121,6 +132,10 @@
     left: 0;
     margin-bottom: 0;
   }
+
+  @include media-min(desktop) {
+    margin-left: 48px;
+  }
 }
 
 .footer-social__wrapper a {
@@ -147,6 +162,7 @@
 }
 
 .copyright {
+  font-size: 14px;
   @include media-min(tablet) {
     float: right;
   }
@@ -155,7 +171,7 @@
     margin-left: 678px;
   }
   @include media-min(desktop) {
-    margin-left: 955px;
+    margin-left: 675px;
   }
 }
 

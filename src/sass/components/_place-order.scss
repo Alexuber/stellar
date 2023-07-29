@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
+    padding-top: 105px;
   }
 }
 
@@ -36,10 +37,23 @@
   font-style: normal;
 
   margin-bottom: 16px;
+
+  @include media-min(desktop) {
+    font-size: 48px;
+  }
 }
 
 .order__desc {
   margin-bottom: 48px;
+}
+
+.order-info {
+  @include media-min(desktop) {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 
 .achievments__title {
@@ -61,5 +75,33 @@
 
   @include media-min(tablet) {
     justify-content: flex-start;
+  }
+}
+
+.achievments-gmt {
+  @include media-min(desktop) {
+    width: 80px;
+    height: 72px;
+  }
+}
+
+.achievments-ekmt {
+  @include media-min(desktop) {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.achievments-adr {
+  @include media-min(desktop) {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.achievments-iso {
+  @include media-min(desktop) {
+    width: 73px;
+    height: 72px;
   }
 }

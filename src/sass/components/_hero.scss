@@ -1,6 +1,7 @@
 .hero {
   padding: 24px 0;
   text-align: center;
+  padding-bottom: 0;
 }
 
 .hero__title {
@@ -55,4 +56,64 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero__animation {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+  @include media-min(tablet) {
+    height: 75px;
+    overflow: visible;
+  }
+  @include media-min(desktop) {
+    height: 32px;
+  }
+}
+
+.svg-left svg {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 310px;
+  height: 300px;
+
+  @include media-min(tablet) {
+    overflow: visible;
+    top: -156px;
+  }
+  @include media-min(desktop) {
+    width: 420px;
+    height: 220px;
+    top: -187px;
+  }
+}
+
+.svg-right svg {
+  position: absolute;
+  top: 125px;
+  right: -35px;
+  width: 230px;
+  height: 120px;
+
+  @include media-min(tablet) {
+    overflow: visible;
+
+    top: -134px;
+    right: 0;
+    width: 310px;
+    height: 300px;
+  }
+  @include media-min(desktop) {
+    width: 420px;
+    height: 220px;
+    top: -157px;
+  }
+}
+
+.list__item__btn-icon {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

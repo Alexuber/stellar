@@ -1,7 +1,6 @@
 const stoSwiper = new Swiper('.stoSwiper', {
   loop: true,
   slidesPerView: 1,
-  // width: 295,
   spaceBetween: 8,
   navigation: {
     enabled: true,

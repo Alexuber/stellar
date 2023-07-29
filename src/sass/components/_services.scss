@@ -1,10 +1,22 @@
 .services {
-  padding-top: 72px;
-  padding-bottom: 110px;
+  padding-bottom: 60px;
+  position: relative;
 }
 
+.services-decor-svg {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+}
 .services__info {
   margin-bottom: 50px;
+  @include media-max(tablet) {
+    margin-top: 72px;
+  }
+
+  @include media-min(desktop) {
+    margin-bottom: 80px;
+  }
 }
 
 .services__info-title {

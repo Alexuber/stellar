@@ -2,6 +2,11 @@
   position: relative;
   height: 40px;
   width: 40px;
+
+  @include media-min(desktop) {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 .loading-icon {
@@ -81,7 +86,7 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-250px); /* Default value for all screen sizes */
+    transform: translateY(-250px);
   }
 }
 

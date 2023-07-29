@@ -7,6 +7,7 @@
   max-width: 375px;
   margin-right: auto;
   margin-left: auto;
+  background: #0f428f; 
 
   background-repeat: no-repeat;
   background-position: center;
@@ -68,6 +69,16 @@
   }
 }
 
+.features-decor {
+  position: absolute;
+  bottom: -42px;
+  left: 0%;
+  width: 100%;
+
+  @include media-min(tablet) {
+    bottom: -42px;
+  }
+}
 .statistics {
   padding-top: 357px;
   position: relative;
@@ -122,6 +133,11 @@
 .statistics__desc {
   color: #c1c1c1;
   text-align: center;
+  color: var(--gray, #c1c1c1);
+
+  @include media-min(desktop) {
+    font-size: 20px;
+  }
 }
 
 .socials {
@@ -151,6 +167,11 @@
   width: 32px;
   height: 128px;
   padding: 8px;
+
+  @include media-min(desktop) {
+    width: 40px;
+    height: 160px;
+  }
 }
 
 .socials__list-item a {
@@ -179,5 +200,12 @@
   }
   @include media-min(desktop) {
     width: 500px;
+  }
+}
+
+.socials__icon {
+  @include media-min(desktop) {
+    width: 24px;
+    height: 24px;
   }
 }

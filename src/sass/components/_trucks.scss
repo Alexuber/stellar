@@ -16,6 +16,9 @@
     left: 38px;
     z-index: -10;
   }
+  @include media-min(fullHD) {
+    left: 322px;
+  }
 }
 
 .trucks-container {
@@ -255,7 +258,7 @@
 
 .weight {
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
 
   margin-bottom: 16px;

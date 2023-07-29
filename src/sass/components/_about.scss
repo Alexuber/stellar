@@ -9,6 +9,7 @@
   background: #0f428f;
 
   padding: 32px 16px;
+  position: relative;
 
   @include media-min(desktop) {
     padding-top: 120px;
@@ -19,8 +20,24 @@
   }
 }
 
+.about-decor-svg {
+  display: none;
+  @include media-min(desktop) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30px;
+  }
+  @include media-min(fullHD) {
+    left: 315px;
+  }
+}
 .about__main {
   margin-bottom: 48px;
+
+  @include media-min(fullHD) {
+    margin-bottom: 28px;
+  }
 }
 
 .about-wrapper {
@@ -247,12 +264,28 @@
 }
 
 .addidtional-services {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 72px;
+  &::before {
+    display: none;
+    @include media-min(desktop) {
+      display: block;
+      content: '';
+      position: absolute;
+      top: -57px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 240px;
+      opacity: 0.2;
+      background: #c1c1c1;
+    }
+  }
 
   @include media-min(desktop) {
     gap: 90px;

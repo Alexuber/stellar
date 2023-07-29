@@ -1,3 +1,18 @@
+const section = document.querySelector('.trucks');
+
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction() {
+    const context = this;
+    const args = arguments;
+    const later = function () {
+      timeout = null;
+      func.apply(context, args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
 function animateCounter(element, duration) {
   let currentCount = 0;
   const finalCount = parseInt(element.innerText, 10);
@@ -9,10 +24,15 @@ function animateCounter(element, duration) {
       clearInterval(timer);
       hideTrucksCraneAndMain();
       stopIconAnimation();
+      shrinkSection();
     } else {
       element.innerText = Math.floor(currentCount);
     }
   }, 500);
+}
+
+function shrinkSection() {
+  section.classList.add('shrink');
 }
 
 function isElementInViewport(element) {
@@ -57,14 +77,12 @@ function startTrucksAnimation() {
   const loadingPercentage = document.querySelector('.loading-percentage');
 
   if (isElementInViewport(trucksSection) && !animationStarted) {
-    console.log('in view -->');
-
     animationStarted = true;
     trucksSection.classList.add('animated');
     animateCounter(loadingPercentage, 5000);
   }
 }
 
-window.addEventListener('scroll', () => {
-  startTrucksAnimation();
-});
+const debouncedStartTrucksAnimation = debounce(startTrucksAnimation, 100);
+
+window.addEventListener('scroll', debouncedStartTrucksAnimation);

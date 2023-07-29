@@ -90,26 +90,38 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1359px) {
+@media (min-width: 768px) and (max-width: 1360px) {
   @keyframes moveUp {
     0% {
       opacity: 1;
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-400px);
+      transform: translateY(-290px);
     }
   }
 }
 
-@media (min-width: 1359px) and (max-width: 1920px) {
+@media (min-width: 1360px) and (max-width: 1920px) {
   @keyframes moveUp {
     0% {
       opacity: 1;
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-500px);
+      transform: translateY(-380px);
     }
   }
+}
+.trucks.animated {
+  height: 100%;
+}
+
+.trucks.animated.shrink {
+  height: 700px;
+
+  @include media-min(desktop) {
+    height: 800px;
+  }
+  transition: height 1s ease;
 }
